@@ -3,7 +3,7 @@ CFLAGS=-std=c99 -pedantic -Wall -Wextra -g \
 LDFLAGS=-L/usr/local/lib -L/usr/X11R6/lib
 LDLIBS=-lXm -lXt -lX11
 
-all: label
+all: label scale
 
 .c:
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $< $(LDLIBS)
